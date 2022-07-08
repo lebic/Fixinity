@@ -1,0 +1,136 @@
+/*---FONT ROBOTO---*/
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*------------------- Phone version ------------------*/
+
+@media screen and (max-width: 425px) {
+    
+
+#form_ctn {
+    margin-inline: 0.5vh;
+}
+
+.list {
+    margin-top: 1vh;
+    width: 100%;
+    
+    font-family:'roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+    color: rgb(43, 43, 43);
+
+    border:none;
+    
+    border-radius: 1vh;
+    background-color:#FFBE5C;
+
+}
+
+#profile_picture_label{
+    display: flex;
+    justify-content: center;
+
+ 
+
+    padding: 2vh;
+    margin-top: 1vh;
+    width: 100%;
+    
+    font-family:'roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(43, 43, 43);
+
+    border: none ;
+    
+    border-radius: 1vh;
+    background-color:#FFBE5C;  
+}
+
+.preview_ctn  {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    
+    box-sizing: border-box;
+}
+
+.preview_img {
+    border-radius: 2vh;
+}
+
+.list_item {
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+
+    font-family:'roboto', sans-serif;
+    font-size: 0.7rem;
+    color: rgb(43, 43, 43);
+    font-weight: 700;
+}
+
+h2 {
+    margin-bottom: 4vh;
+
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    
+}
+
+h3 {
+    margin-top: 3vh;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.block_name {
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.block_layout {
+    margin-top: 2vh;
+    border: 0.3vh solid;
+    border-radius: 0;
+}
+
+
+
+
+
+
+#signup_ctn{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+
+}
+
+#signup_btn {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    width: 100%;
+    background-color: #FF9900;
+}
+
+#signup_ctn p {
+    margin-top: 1vh;
+    font-family: 'roboto',sans-serif;
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+}

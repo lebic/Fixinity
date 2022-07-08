@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+}
+main {
+    width: 100%;
+    margin-bottom: 15vh;
+    height: fit-content;
+}
+
+@media screen and (max-width: 425px) {
+    /* User container */
+    #user_ctn {
+        align-items: center;
+        justify-content: left;
+        margin: 15vw 1vw 3vw 8vw;
+        font-family: "comfortaa", cursive;
+    }
+
+    /*--User name --*/
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /* User text (name,request nb) */
+
+    .user_text {
+        margin-left: 2vh;
+    }
+
+    .user_text p {
+        margin-top: 0.5vh;
+        font-size: 0.9em;
+    }
+
+    /* User img */
+
+    #user_ctn img {
+        position: relative;
+        top: -1.5vh;
+    }
+
+    /* Status Container */
+
+    #status_ctn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-family: "comfortaa", cursive;
+    }
+
+    #status_ctn p {
+        margin-right: 1.5vh;
+        margin-bottom: 1vh;
+    }
+
+    .status_line_newoffer {
+        background-color: #ffe9c6;
+        width: 100%;
+        height: 1.5vh;
+    }
+    .status_line_active {
+        background-color: #d4fff8;
+        width: 100%;
+        height: 1.5vh;
+    }
+    .status_line_solved {
+        background-color: #e2ffc3;
+        width: 100%;
+        height: 1.5vh;
+    }
+    /*-- Form container --*/
+    #request_ctn {
+        margin: 2vh 3vh 3vh 3vh;
+    }
+
+    .request_img_ctn {
+        border-radius: 2vh;
+    }
+
+    .request_img {
+        transition: all ease-in-out 200ms;
+        margin-top: 2vh;
+        width: 25%;
+        border-radius: 2vh;
+    }
+    .biggerImg {
+        transition: all ease-in-out 200ms;
+        margin-top: 2vh;
+        width: 100%;
+        border-radius: 2vh;
+    }
+
+    /*-- Section container --*/
+    .section_ctn {
+        margin-top: 5vh;
+    }
+
+    .section_newoffer_ctn {
+        margin-top: 5vh;
+        padding: 3vh 2vw 3vh 2vw;
+        background-color: #e7e7e7;
+        border-radius: 2vh;
+    }
+
+    .section_text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .section_text p {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+
+        margin: 1vh;
+        padding: 0.5vh 1vh 0.5vh 1vh;
+
+        font-size: 0.8em;
+
+        border-radius: 2vh;
+        background-color: #ffbe5c;
+    }
+
+    /*-- title container --*/
+    h3 {
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    /*-- Problem description container --*/
+
+    #problem-ctn {
+        margin: 1vh 0vh 2vh 0vh;
+        padding: 2vh 2vh 1vh 2vh;
+
+        font-family: "roboto regular", sans-serif;
+        background-color: #ffbe5c;
+        border-radius: 2vh;
+        height: fit-content;
+    }
+
+    #problem-ctn p {
+        margin: 1vh 0vh 1vh 0vh;
+    }
+
+    /*--Date picker: Container--*/
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        max-width: 100%;
+    }
+
+    .date_ctn {
+        margin-top: 2vh;
+    }
+
+    /*--Date picker: border--*/
+    .datepicker_label {
+        display: block;
+
+        width: 40%;
+
+        font-size: 0.75rem;
+        font-weight: 400;
+
+        font-family: "roboto", sans-serif;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    .date {
+        display: block;
+        text-align: center;
+        justify-content: center;
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 350;
+
+        padding: 0.4em 0.2em 0.4em 0.2em;
+        font-size: 1.3rem;
+
+        color: #000000;
+
+        width: 110%;
+
+        border: none;
+
+        border-radius: 0.5rem;
+    }
+
+    /* Time picker */
+
+    .timepicker {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1vh 1vh 1vh 1vh;
+        margin-right: 8vw;
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 350;
+
+        width: 33%;
+        font-size: 1.2rem;
+        color: #2b2b2b;
+
+        border: none;
+        border-radius: 1vh;
+        background-color: #ffbe5c;
+    }
+    .timepicker-newoffer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1vh 1vh 1vh 1vh;
+        margin-right: 0vw;
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 350;
+
+        width: 33%;
+        font-size: 1.2rem;
+        color: #2b2b2b;
+
+        border: none;
+        border-radius: 1vh;
+        background-color: #ffbe5c;
+    }
+
+    .ui-timepicker {
+        border-radius: 1vh;
+        font-family: "roboto", sans-serif;
+        font-size: 0.875rem;
+
+        text-transform: uppercase;
+
+        color: #78909c;
+    }
+
+    /* Price */
+
+    #estimated_price {
+        display: block;
+        text-align: left;
+
+        font-family: "Roboto", sans-serif;
+        font-weight: 350;
+
+        padding: 0.4em 0.2em 0.4em 0em;
+        font-size: 1.3rem;
+
+        color: #000000;
+
+        width: 110%;
+
+        border: none;
+
+        border-radius: 0.5rem;
+    }
+
+    /* button container */
+
+    .btn_ctn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin-top: 5vh;
+    }
+
+    .btn_confirm {
+        padding: 0;
+        font-size: 0.7em;
+        font-weight: 800;
+        border: 0.1em solid;
+    }
+
+    /*  */
+}

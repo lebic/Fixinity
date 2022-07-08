@@ -1,0 +1,260 @@
+:root {
+    --logout: #ff705c;
+    --textcard: rgb(119, 58, 0);
+    /* --coloractivecard: #ffbe5c; */
+    --coloractivecard: #ffe9c6;
+    --colorpendingcard: #d4fff8;
+    --colorclosecard: #e2ffc3;
+}
+
+/*------------------- Phone version ------------------*/
+
+@media screen and (max-width: 1000px) {
+    main {
+        font-size: 1.8em;
+    }
+    section {
+        margin: 0vh 10vw 0vh 10vw;
+    }
+
+    /*--- Profile picture, name and country ---*/
+
+    #profile_ctn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5vh 0vh 5vh 0vh;
+
+        font-family: "Comfortaa", cursive;
+        font-weight: 400;
+    }
+
+    #profile_picture {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10vh;
+        width: 50%;
+    }
+
+    #profile_ctn h2 {
+        margin-top: 1vh;
+        font-size: 7vw;
+    }
+
+    #profile_ctn p {
+        margin-top: 2vh;
+
+        text-transform: uppercase;
+        font-family: "roboto black", sans-serif;
+        font-weight: 750;
+    }
+
+    /*--- Logout btn ---*/
+
+    #logout_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        position: relative;
+        top: 2vh;
+        left: 15vh;
+
+        padding: 1vh 2vh 1vh 2vh;
+
+        border-radius: 1vh;
+        background-color: var(--logout);
+
+        color: white;
+        text-decoration: none;
+    }
+
+    #logout_btn:hover {
+        filter: brightness(1.1);
+        transform: scale(1.05);
+        transition: all ease-in-out 100ms;
+    }
+
+    /*---Stats Request ---*/
+    h3 {
+        font-family: "roboto", sans-serif;
+        text-transform: uppercase;
+    }
+
+    #stats_ctn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin: 2vh 0vh 4vh 0vh;
+
+        font-family: "roboto", sans-serif;
+        font-weight: 300;
+        font-size: 1.2em;
+        text-transform: uppercase;
+
+        width: 100%;
+    }
+
+    .request-stats_ctn {
+        margin: 2vh 0vh 0vh 0vh;
+    }
+
+    .request-stats_nb {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    /*--- Card container---*/
+    #card_ctn {
+        margin-bottom: 20vh;
+
+        /*---Base Card request section ---*/
+    }
+    /*--- Whole card ---*/
+    #card {
+        display: flex;
+        flex-direction: column;
+
+        margin: 4vh 0vh 3vh 0vh;
+
+        text-decoration: none;
+
+        font-family: "roboto", sans-serif;
+        color: rgb(43, 43, 43);
+
+        overflow: hidden;
+        border-radius: 2vh;
+        background-color: #ffffff;
+        box-shadow: 3px 6px 14px 2px rgba(0, 0, 0, 0.49);
+    }
+
+    #card:hover {
+        filter: brightness(1.1);
+        transform: scale(1.01);
+        transition: all ease-in-out 100ms;
+    }
+
+    /*--- Card Name, type and profile picture container ---*/
+    #card_profile {
+        display: flex;
+        flex-direction: row;
+        padding: 2vh 2vh 1vh 2vh;
+
+        color: var(--textcard);
+    }
+
+    .card_profile_active {
+        background-color: var(--coloractivecard);
+    }
+    .card_profile_pending {
+        background-color: var(--colorpendingcard);
+    }
+    .card_profile_close {
+        background-color: var(--colorclosecard);
+    }
+
+    .card_img {
+        border-radius: 10vh;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    #card_profile_text {
+        display: flex;
+        flex-direction: column;
+        margin: 0vh 0vh 0vh 2vh;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    h5 {
+        margin: 0.5vh 0vh 0vh 0vh;
+        font-style: italic;
+    }
+    /*--- Card Problem description ---*/
+    #card_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+
+        margin: 2vh 2vh 1vh 2vh;
+    }
+
+    /*--- List of categories (Active,received offer,finished) ---*/
+
+    #categories_ctn {
+        margin-top: 4vh;
+        width: 100%;
+        font-weight: bold;
+
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #line {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        margin: 0%;
+
+        height: 0.1vh;
+
+        background-color: #2b2b2b;
+    }
+
+    #overline {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        margin: 0%;
+
+        height: 0.5vh;
+        width: 0%;
+
+        background-color: #2b2b2b;
+        transition: all ease-in-out 300ms;
+    }
+
+    #categories_ctn ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0;
+    }
+
+    #categories_ctn li {
+        margin: 0;
+        padding: 0.5vh;
+    }
+
+    #categories_ctn li label {
+        margin: 0;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+
+        background: none;
+        border: none;
+        font-family: "roboto", sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+        text-transform: uppercase;
+
+        transition: all ease-in-out 250ms;
+    }
+}

@@ -1,0 +1,29 @@
+/*------------------- Phone version ------------------*/
+    
+@media screen and (max-width: 1000px) {
+
+#signin_ctn{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+
+}
+
+#signin_btn {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 100%;
+    background-color: #FF9900;
+}
+
+#signin_ctn p {
+    margin-top: 1vh;
+    font-family: 'roboto',sans-serif;
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+}

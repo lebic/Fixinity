@@ -1,0 +1,295 @@
+/*-- title container --*/
+h3 {
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*-- Section container --*/
+
+.section_newoffer_ctn {
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    padding: 3vh 2vw 3vh 2vw;
+    background-color: #e7e7e7;
+    border-radius: 2vh;
+}
+
+/*--Date picker: Container--*/
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 4vh;
+    max-width: 100%;
+}
+/*--Date picker: border--*/
+.datepicker_label {
+    display: block;
+
+    width: 40%;
+
+    font-size: 0.75rem;
+    font-weight: 400;
+
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.datepicker_input {
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+
+    padding: 0.4em 0.2em 0.4em 0.2em;
+    font-size: 1.3rem;
+
+    color: #000000;
+
+    width: 110%;
+    margin-top: 0.5rem;
+
+    border: none;
+
+    border-radius: 0.5rem;
+}
+
+.datepicker_input:focus {
+    outline: none;
+}
+#ui-datepicker-div {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.ui-datepicker-calendar thead th {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #78909c;
+}
+.ui-datepicker-calendar tbody td {
+    width: 2.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+/* DATEPICKER: number calendar */
+.ui-datepicker-calendar tbody td a {
+    display: block;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    transition: 0.3s all;
+    font-family: "roboto", sans-serif;
+    color: #546e7a;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {
+    background-color: #e0f2f1;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: #ffbe5c;
+    color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+    background-color: #eceff1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {
+    left: 0;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-size: 0.5rem;
+    background-position: 50%;
+    transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+    right: 0;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 50%;
+}
+.ui-datepicker-header a > span {
+    display: none;
+}
+/* DATEPICKER: title calendar */
+.ui-datepicker-title {
+    text-align: center;
+
+    font-family: "roboto";
+
+    line-height: 2rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-bottom: 0.25rem;
+}
+.ui-datepicker-week-col {
+    font-family: "roboto", sans-serif;
+
+    color: #78909c;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+/* Time picker */
+
+.timepicker {
+    text-align: center;
+    padding: 1vh 1vh 1vh 1vh;
+    margin-right: 8vw;
+    height: 4vh;
+    width: 33%;
+    font-size: 1.2rem;
+    color: #2b2b2b;
+
+    border: none;
+    border-radius: 1vh;
+    background-color: #ffbe5c;
+}
+.timepicker:hover {
+    border: 1px solid #ff9900;
+}
+
+.ui-timepicker {
+    border-radius: 1vh;
+    font-family: "roboto", sans-serif;
+    font-size: 0.875rem;
+
+    text-transform: uppercase;
+
+    color: #78909c;
+}
+/* Time picker */
+
+.timepicker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1vh 1vh 1vh 1vh;
+    margin-right: 8vw;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+
+    width: 33%;
+    font-size: 1.2rem;
+    color: #2b2b2b;
+
+    border: none;
+    border-radius: 1vh;
+    background-color: #ffbe5c;
+}
+.timepicker-newoffer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1vh 1vh 1vh 1vh;
+    margin-right: 0vw;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+
+    width: 33%;
+    font-size: 1.2rem;
+    color: #2b2b2b;
+
+    border: none;
+    border-radius: 1vh;
+    background-color: #ffbe5c;
+}
+
+.ui-timepicker {
+    border-radius: 1vh;
+    font-family: "roboto", sans-serif;
+    font-size: 0.875rem;
+
+    text-transform: uppercase;
+
+    color: #78909c;
+}
+
+/* Price */
+
+.price_ctn {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 1vh;
+}
+
+.price_ctn p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1vh 1vw 1vh 1vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+    font-size: 1.3rem;
+}
+
+#estimated_price {
+    display: block;
+    text-align: center;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+
+    padding: 0.4vh 1vw 0.4vh 1vw;
+    font-size: 1.3rem;
+
+    color: #000000;
+
+    width: 30%;
+
+    border: none;
+
+    border-radius: 0.5rem;
+}
+
+/* button container */
+
+.btn_ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3vh;
+}
+
+.btn_confirm {
+    padding: 0;
+    font-size: 0.7em;
+    font-weight: 800;
+    border: 0.1em solid;
+    height: 6vh;
+}

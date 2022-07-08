@@ -1,0 +1,123 @@
+/*------------------- Phone version ------------------*/
+
+@media screen and (max-width: 425px) {
+    * {
+        margin: 0;
+    }
+
+    #intro_ctn {
+        margin: 15vw 1vw 3vw 8vw;
+    }
+    h1 {
+        font-family: "comfortaa", cursive;
+        font-size: 9vw;
+    }
+
+    h2 {
+        margin-top: 5vh;
+        font-family: "roboto black", sans-serif;
+        font-weight: 800;
+        font-size: 6vw;
+
+        width: 70%;
+        text-transform: uppercase;
+    }
+    h2 span {
+        color: #ff9900;
+    }
+
+    h3 {
+        font-size: 0.9em;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .profil {
+        transform: scale(0.9);
+        text-align: center;
+    }
+
+    .profil img {
+        border-radius: 5vh;
+        width: 10vh;
+    }
+
+    #intro_ctn p {
+        margin-top: 3vh;
+        font-family: "roboto regular", sans-serif;
+        font-size: 3vw;
+        text-transform: uppercase;
+        text-align: justify;
+        width: 60%;
+    }
+
+    #team_ctn {
+        margin-top: 10vh;
+        margin-inline: 8vw;
+    }
+
+    /*--Team pictures--*/
+
+    #picture_ctn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #picture_ctn img {
+        margin: 1vh;
+        width: 10vh;
+    }
+    /*--Contact us button--*/
+
+    #contact_btn_ctn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 4vh;
+    }
+
+    .btn_contact {
+        text-align: center;
+        font-size: 0.8rem;
+        border-radius: 1vh;
+        border: 0.2rem solid;
+        height: 6vh;
+        padding-inline: 1vw;
+    }
+
+    /*--Graphic elements--*/
+
+    #intro_ctn::after {
+        content: "";
+        width: 100%;
+        height: 80vh;
+
+        display: inline-block;
+        position: absolute;
+        top: 30vh;
+        right: 0vh;
+
+        background-image: url("/images/Contact_element_1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    #intro_ctn::before {
+        content: "";
+        width: 100%;
+        height: 20vh;
+
+        display: inline-block;
+        position: absolute;
+        top: 80vh;
+        right: 0vh;
+
+        background-image: url("/images/Contact_element_2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
